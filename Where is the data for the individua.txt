@@ -1,0 +1,40 @@
+Where is the data for the individual virtual pick tickets being stored?
+Its always in the original file!
+----------------------------------------------------------------------
+New Program: "MP3b-Virtual_Pick_Ticket_Export_and_External_Data_Importer.html"
+Do not change the roles or duties of any other already created or planned MP Program.
+I need a separate tool that will do the following:
+1) Be completely self contained from any other MP programs.
+2) Will scan each of the virtual pick tickets that its instructed to scan.
+3) Will export the following data out of the virtual pick tickets into a CSV file named "MP3_Export_Data.CSV".
+Col C: Customer ID (Already in SCDIO data)
+Col D: IMF (Already in SCDIO data)
+Col H: Posted Date Time (Already in SCDIO data)
+Col O: Transaction ID (Already in SCDIO data)
+Col U: Vista Order # (Added by Physical Pick Ticket)
+Col V: Amt Ordered (Added by Physical Pick Ticket)
+Col W: Phy PT Amt Del (Added by Physical Pick Ticket)
+Col X: SCDIO QTY Delivered (Already in SCDIO data)
+Col Y: Name of the file the data came out of.
+Any column not listed will be skipped and remain empty.
+4) Will allow me to also do a reverse import of field data from a separate CSV file (not the SCDIO CSV file) into the individual pick tickets.
+5) VirtualPickTickets/MP3Exports/  <-- Save file directly there as csv not zip
+----------------------------------------------------------------------
+
+Pick Ticket Verifier Program
+MP1: MP1-Scanned_Pick_Ticket_Bulk_PDF_Splitter_Program.html
+MP2: MP2-Ind_PDF_to_Virtual_Pick_Ticket_Creator (hopefully works).html
+MP3a: MP3a-Virtual_Pick_Ticket_Interactive_Editor.html
+MP3b: MP3b-Virtual_Pick_Ticket_Export_and_External_Data_Importer.html
+MP4: MP4-Virtual_Pick_Ticket_to_SCDIO_Compare_and_SAVE.html
+MP5: MP4-Pick_Ticket_Reports.html
+
+Does the SCDIO file have a column for each of the individual virtual pick ticket fields?
+Col C: Customer ID (Already in SCDIO data)
+Col D: IMF (Already in SCDIO data)
+Col H: Posted Date Time (Already in SCDIO data)
+Col O: Transaction ID (Already in SCDIO data)
+Col U: Vista Order # (Added by Physical Pick Ticket)
+Col V: Amt Ordered (Added by Physical Pick Ticket)
+Col W: Phy PT Amt Del (Added by Physical Pick Ticket)
+Col X: SCDIO QTY Delivered (Already in SCDIO data)

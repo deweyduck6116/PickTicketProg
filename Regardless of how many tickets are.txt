@@ -1,0 +1,42 @@
+Regardless of how many tickets are in the queue to be reviewed; allow me to only activate and work on 1 ticket at a time. 
+
+Once I'm done editing\confirming the details of the pdf copy  of the pick ticket to the virtual pick ticket require me to perform a save of that data.
+
+At this point no information in the SCDIO CSV should have occurred yet. If I forget this. Remind be while I'm in the ticket so I don't get ahead of myself.
+
+Don't mess with the layout of my tickets or the highlighting it does or which fields are editable by me.
+
+I don't care if some of the heavy lifting has to be farmed out to another csv file or a JSON file or whatever.
+
+Mission accomplishment is the goal.
+
+The next stage is to pull into the virtual pick ticket the amount that the SCDIO data says was delivered and determine if there is a match, missing info, or a difference.
+
+When all that is said in done we save the data again and post it into a copy of the SCDIO csv file.
+
+Here is how I manually find matches:
+
+I look in the SCDIO CSV file.
+I convert the range of data to a table with headers.
+I know this table will not remain a table because it is a CSV file.
+I look in the SCDIO CSV file in Col C.
+I isolate\filter the data by customer ID in Col C.
+For example "644-ED2".
+Then I do another filter by Col H and filter for the date of the pick ticket and include the next 3 days.
+Then I search in Col D of my SCDIO CSV file for the 1st IMF number on my ticket. If I find it, I write down the transaction ID number I find in Col O of the same row.
+If there are multiple instances of that IMF number spanning the 4 days I write down all of the Transaction ID numbers.
+Then I search in Col D of my SCDIO CSV file for the 2nd IMF number on my ticket. If I find it, I write down the transaction ID number I find in Col O of the same row.
+If there are multiple instances of that IMF number spanning the 4 days I write down all of the Transaction ID numbers.
+If 2 of the items\IMF numbers both have the same Transaction ID number I clear all my filters and filter for just that Transaction ID number.
+If that Transaction ID number has the same QTY of items on the order and all the same IMF numbers I know I've found a match.
+
+I'm not asking for an all or nothing match.
+I'm asking for probabilities to get the human closer to an actual match.
+A perfect match would be ideal but is not going to occur at least at first.
+Each ticket needs to be able to go through several matching processes if necessary.
+If the date & customer ID match and 1 single IMF number then that item should qualify for match consideration.
+If 2 or more items match the qualifications for date and customer ID they should qualify for a match potential.
+However, if 1 of the items doesn't have the same Transaction ID number as the rest of the contestants it should be excluded from the list.
+If the ticket has for example 2 items on it and the number of total IMF count found also equals 2 items this should be considered a 100% match.
+
+Do I need to expound on this process of do you think you can write a process that does this more effectively now?
